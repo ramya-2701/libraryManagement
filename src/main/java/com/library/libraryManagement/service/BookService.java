@@ -27,7 +27,7 @@ public class BookService {
         bookMap.put(bookId,book);
         return book;
     }
-    public Book deleteBook(Long bookId){
-        return bookMap.remove(bookId);
+    public void deleteBook(Long bookId){
+         bookMap.remove(bookId);
     }
 }

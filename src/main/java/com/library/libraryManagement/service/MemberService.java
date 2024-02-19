@@ -27,7 +27,7 @@ public class MemberService {
         memberMap.put(memberId,member);
         return member;
     }
-    public Member deleteMember(Long memberId){
-         return memberMap.remove(memberId);
+    public void deleteMember(Long memberId){
+          memberMap.remove(memberId);
     }
 }
