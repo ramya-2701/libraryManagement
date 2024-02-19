@@ -28,6 +28,6 @@ public class MemberService {
         return member;
     }
     public Member deleteMember(Long memberId){
-        return memberMap.remove(memberId);
+         return memberMap.remove(memberId);
     }
 }

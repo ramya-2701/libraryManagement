@@ -26,8 +26,8 @@ public class MemberController {
         return memberService.updateMember(memberId,member);
     }
     @DeleteMapping("/{memberId}")
-    public Member deleteMember(@PathVariable Long memberId){
-        return memberService.deleteMember(memberId);
+    public void deleteMember(@PathVariable Long memberId){
+         memberService.deleteMember(memberId);
     }
 
 
